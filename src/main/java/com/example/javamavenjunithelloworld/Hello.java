@@ -13,9 +13,6 @@ public class Hello {
     int x = 20;
     int y = 18;
     int z = 23;
-    if (x > y)
-      System.out.println("x is greater than y");
-      System.out.println("Done");
 
     /**
      * Set how many times "Hello!" should be said.
@@ -40,6 +37,12 @@ public class Hello {
         for (short i = 0; i < times; i++) {
             printer.println(HELLO);
         }
+    }
+    
+    public void testfunc(PrintStream printer) {
+        if (x > y)
+            printer.println("x is greater than y");
+            printer.println("Done");
     }
 
 }
