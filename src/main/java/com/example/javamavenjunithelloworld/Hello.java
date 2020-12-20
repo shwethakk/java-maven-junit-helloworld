@@ -10,6 +10,12 @@ public class Hello {
     static final String HELLO = "Hello!";
     public static final int MAXIMUM_AMOUNT_OF_TIMES = 20;
     private short times = 1;
+    int x = 20;
+    int y = 18;
+    int z = 23;
+    if (x > y)
+      System.out.println("x is greater than y");
+      System.out.println("Done");
 
     /**
      * Set how many times "Hello!" should be said.
