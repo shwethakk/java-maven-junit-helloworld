@@ -44,5 +44,16 @@ public class Hello {
             printer.println("x is greater than y");
             printer.println("Done");
     }
+    
+    public void foo(String fmt, Object args) throws Exception {
+        System.in.read();
+        System.setIn(new java.io.FileInputStream("test.txt"));
+        java.io.Console console = System.console();
+        console.reader();
+        console.readLine();
+        console.readLine(fmt, args);
+        console.readPassword();
+        console.readPassword(fmt, args);
+    }
 
 }
